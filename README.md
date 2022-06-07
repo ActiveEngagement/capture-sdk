@@ -29,6 +29,12 @@ composer require actengage/capture-sdk
 php artisan vendor:publish --tag=capture-config
 ```
 
+*Set the endpoint URL in your ENV file.*
+
+```php
+CAPTURE_ENDPOINT=http://localhost:3000/
+```
+
 ## Basic Usage
 
 ```php

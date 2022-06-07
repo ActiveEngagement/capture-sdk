@@ -1,7 +1,7 @@
 {
     "name": "actengage/capture",
     "description": "The official SDK for Capture.",
-    "keywords": ["puppeteer", "screenshot", "capture"],
+    "keywords": ["Laravel", "Puppeteer", "screenshot", "capture"],
     "license": "MIT",
     "authors": [
         {
