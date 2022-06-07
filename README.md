@@ -1,4 +1,4 @@
-# Capture
+# Capture SDK
 
 This package provides fluent SDK for the Capture server. Capture is a Node server on AWS that takes screenshots with a variety of options. This package requires access to a Capture server endpoint before it be used.
 

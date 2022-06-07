@@ -1,5 +1,5 @@
 {
-    "name": "actengage/laravel-capture",
+    "name": "actengage/capture",
     "description": "The official SDK for Capture.",
     "keywords": ["puppeteer", "screenshot", "capture"],
     "license": "MIT",
