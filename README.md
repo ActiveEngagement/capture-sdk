@@ -20,7 +20,7 @@ Why is the Capture server endpoint not included in the package? Capture is a pri
 *Install via Composer*
  
 ```php
-composer require actengage/laravel-capture
+composer require actengage/capture-sdk
 ```
 
 *Publish the config file*
