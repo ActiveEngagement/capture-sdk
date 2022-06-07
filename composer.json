@@ -1,0 +1,47 @@
+{
+    "name": "actengage/laravel-capture",
+    "description": "The official SDK for Capture.",
+    "keywords": ["puppeteer", "screenshot", "capture"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Justin Kimbrell",
+            "email": "jkimbrell@actengage.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^9.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.5",
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Actengage\\Capture\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4" : {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Actengage\\Capture\\ServiceProvider"
+            ],
+            "aliases": {
+                "Screenshot": "\\Actengage\\Capture\\Facades\\Screenshot"
+            }
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php ./vendor/bin/testbench package:discover --ansi"
+        ]
+    }
+}
