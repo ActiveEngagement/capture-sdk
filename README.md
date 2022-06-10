@@ -81,6 +81,18 @@ $response = Screenshot::make('https://google.com')
     ->request();
 ```
 
+### Full Page
+
+Take full page screenshots. Defaults to `false`.
+
+```php
+use Actengage\Capture\Facades\Screenshot;
+
+$response = Screenshot::make('https://google.com')
+    ->fullPage(true)
+    ->request();
+```
+
 ### Headers
 
 Pass a custom headers that are included by Puppeteer in its HTTP request. Defaults to `{"Accept-Language": "en-US"}`.

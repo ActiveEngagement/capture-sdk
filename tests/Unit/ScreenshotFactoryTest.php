@@ -30,11 +30,12 @@ class ScreenshotFactoryTest extends TestCase
             'handler' => $handlerStack
         ]);
 
-        $factory = Screenshot::make('<div>test</div>', 'test.html')
+        $factory = Screenshot::make('<div>test</div>')
             ->client($client)
             ->call('test', [1, 2, 3])
             ->clip(new Clip(800, 600, 400, 300))
             ->encoding(Encoding::Binary)
+            ->fullPage(true)
             ->header('Some-Header', 'some value')
             ->omitBackground(false)
             ->quality(75)
@@ -42,7 +43,7 @@ class ScreenshotFactoryTest extends TestCase
             ->type(Type::PNG)
             ->viewport(new Viewport(1200, 800))
             ->waitUntil(WaitUntil::Load);
-        
+
         $response = $factory->request();
 
         $this->assertInstanceOf(Response::class, $response);
