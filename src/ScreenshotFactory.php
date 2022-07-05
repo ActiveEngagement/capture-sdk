@@ -248,7 +248,7 @@ class ScreenshotFactory implements Arrayable
      * @param boolean $fullPage
      * @return self
      */
-    public function fullPage(bool $fullPage): self
+    public function fullPage(bool $fullPage = true): self
     {
         $this->fullPage = $fullPage;
 
@@ -261,7 +261,7 @@ class ScreenshotFactory implements Arrayable
      * @param boolean $omitBackground
      * @return self
      */
-    public function omitBackground(bool $omitBackground): self
+    public function omitBackground(bool $omitBackground = true): self
     {
         $this->omitBackground = $omitBackground;
 
