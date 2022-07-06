@@ -388,7 +388,7 @@ class ScreenshotFactory implements Arrayable
             'timeout' => $this->timeout,
             'type' => $this->type->value,
             'viewport' => $this->viewport
-        ]);
+        ], fn ($value) => $value !== null);
     }
 
     /**
